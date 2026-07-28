@@ -82,3 +82,17 @@ padding:20px;
     border-radius:25px;
     margin-bottom:15px;
 }
+.order-btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 20px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.order-btn:hover{
+    background:#1da851;
+}
