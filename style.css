@@ -115,3 +115,48 @@ h1 {
     color: #ffd700;
     margin: 10px 0;
 }
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    padding:20px;
+}
+
+.card{
+    background:#fff;
+    border-radius:15px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h2{
+    color:#0b2e6b;
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.card p{
+    font-size:20px;
+    margin:10px 0;
+}
+
+.card a{
+    display:inline-block;
+    margin-top:15px;
+    background:#25D366;
+    color:#fff;
+    text-decoration:none;
+    padding:12px 20px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.card a:hover{
+    background:#1da851;
+}
