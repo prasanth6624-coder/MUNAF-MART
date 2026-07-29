@@ -1,4 +1,4 @@
-const searchInput = document.getElementById("searchInput");
+const searchInput = document.getElementById("searchBox");
 const cards = document.querySelectorAll(".card");
 
 searchInput.addEventListener("keyup", function () {
