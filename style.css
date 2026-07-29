@@ -96,3 +96,22 @@ padding:20px;
 .order-btn:hover{
     background:#1da851;
 }
+header img {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 15px;
+}
+
+header {
+    background: linear-gradient(135deg, #0b2e6b, #123d8d);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+h1 {
+    color: #ffd700;
+    margin: 10px 0;
+}
