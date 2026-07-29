@@ -44,13 +44,13 @@ function removeFromCart(index) {
     let list = "";
 
     cart.forEach(function(item, i) {
-        list += `
-            <p>
-                ${item.name} - Rs.${item.price}
-                <button onclick="removeFromCart(${i})">❌ Remove</button>
-            </p>
-        `;
-    });
+    list += `
+        <p>
+            ${item.name} - Rs.${item.price}
+            <button onclick="removeFromCart(${i})">❌ Remove</button>
+        </p>
+    `;
+});
 
     document.getElementById("cartItems").innerHTML = list;
     document.getElementById("cartTotal").innerHTML = total;
