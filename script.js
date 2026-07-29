@@ -42,8 +42,7 @@ function removeFromCart(index) {
     document.getElementById("cartCount").innerText = cart.length;
 
     let list = "";
-
-    cart.forEach(function(item, i) {
+cart.forEach(function(item, i) {
     list += `
         <p>
             ${item.name} - Rs.${item.price}
