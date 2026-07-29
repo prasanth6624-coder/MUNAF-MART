@@ -17,9 +17,8 @@ function addToCart(productName, price) {
     });
 
     document.getElementById("cartItems").innerHTML = list;
-}
-   
-    document.getElementById("cartTotal").innerText = total;
+    
+    document.getElementById("cartTotal").innerHTML = total;
 }
 function sendWhatsApp() 
 
