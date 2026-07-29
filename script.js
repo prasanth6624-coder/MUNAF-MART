@@ -20,7 +20,7 @@ function addToCart(productName, price) {
     
     document.getElementById("cartTotal").innerHTML = total;
 }
-function sendWhatsApp() 
+function sendWhatsApp() {
 
     let message = "🛒 MUNAF-MART Order\n\n";
 
