@@ -35,3 +35,23 @@ function sendWhatsApp() {
 
     window.open(url, "_blank");
 }
+function removeFromCart(index) {
+    total -= cart[index].price;
+    cart.splice(index, 1);
+
+    document.getElementById("cartCount").innerText = cart.length;
+
+    let list = "";
+
+    cart.forEach(function(item, i) {
+        list += `
+            <p>
+                ${item.name} - Rs.${item.price}
+                <button onclick="removeFromCart(${i})">❌ Remove</button>
+            </p>
+        `;
+    });
+
+    document.getElementById("cartItems").innerHTML = list;
+    document.getElementById("cartTotal").innerHTML = total;
+}
