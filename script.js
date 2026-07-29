@@ -22,7 +22,7 @@ function addToCart(productName, price) {
         price: price
     });
 
-    alert(productName + " added to cart!");
+    document.getElementById("cartCount").textContent = cart.length;
 
-    console.log(cart);
+    alert(productName + " added to cart!");
 }
