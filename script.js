@@ -13,4 +13,4 @@ searchInput.addEventListener("keyup", function () {
             card.style.display = "none";
         }
     });
-    
+});
