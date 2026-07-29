@@ -6,6 +6,7 @@ function addToCart(productName, price) {
         name: productName,
         price: price
     });
+    total += price;
 
     document.getElementById("cartCount").innerText = cart.length;
 
