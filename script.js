@@ -22,7 +22,13 @@ function addToCart(productName, price) {
         price: price
     });
 
-    document.getElementById("cartCount").textContent = cart.length;
+    document.getElementById("cartCount").innerText = cart.length;
 
-    alert(productName + " added to cart!");
+    let list = "";
+
+    cart.forEach(function(item) {
+        list += "<p>" + item.name + " - Rs." + item.price + "</p>";
+    });
+
+    document.getElementById("cartItems").innerHTML = list;
 }
