@@ -1,1 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>MUNAF-MART | Wholesale & Retail Store</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo-area">
+            <h1>MUNAF-MART</h1>
+            <p>Wholesale & Retail Store</p>
+            <span>📍 Kalutara, Sri Lanka</span>
+        </div>
+
+        <button class="whatsapp-btn" onclick="sendWhatsApp()">
+            💬 WhatsApp Order
+        </button>
+    </header>
+
+
+    <!-- SEARCH -->
+    <section class="search-section">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="🔍 Search products..."
+            onkeyup="searchProducts()"
+        >
+    </section>
+
+
+    <!-- PRODUCTS -->
+    <main>
+
+        <h2>Our Products</h2>
+
+        <div class="product-grid" id="productGrid">
+
+            <div class="product-card">
+                <img src="IMG_6847.jpeg" alt="Face Mask">
+                <h3>Face Mask</h3>
+                <p class="price">Rs. 330</p>
+                <button onclick="addToCart('Face Mask',330)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product-card">
+                <h3>Dish Scrubber</h3>
+                <p class="price">Rs. 900</p>
+                <button onclick="addToCart('Dish Scrubber',900)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product-card">
+                <h3>Glue</h3>
+                <p class="price">Rs. 450</p>
+                <button onclick="addToCart('Glue',450)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product-card">
+                <h3>Paper Cup</h3>
+                <p class="price">Rs. 250</p>
+                <button onclick="addToCart('Paper Cup',250)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product-card">
+                <h3>Washing Powder</h3>
+                <p class="price">Rs. 22</p>
+                <button onclick="addToCart('Washing Powder',22)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product-card">
+                <h3>Sharpener</h3>
+                <p class="price">Rs. 300</p>
+                <button onclick="addToCart('Sharpener',300)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product-card">
+                <h3>Eraser</h3>
+                <p class="price">Rs. 350</p>
+                <button onclick="addToCart('Eraser',350)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product-card">
+                <h3>Nail Clipper</h3>
+                <p class="price">Rs. 800</p>
+                <button onclick="addToCart('Nail Clipper',800)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product-card">
+                <h3>Kids Toothbrush</h3>
+                <p class="price">Rs. 120</p>
+                <button onclick="addToCart('Kids Toothbrush',120)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product-card">
+                <h3>Adult Toothbrush</h3>
+                <p class="price">Rs. 135</p>
+                <button onclick="addToCart('Adult Toothbrush',135)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product-card">
+                <h3>Electrical Tape</h3>
+                <p class="price">Rs. 400</p>
+                <button onclick="addToCart('Electrical Tape',400)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product-card">
+                <h3>Razor Blade</h3>
+                <p class="price">Rs. 300</p>
+                <button onclick="addToCart('Razor Blade',300)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product-card">
+                <h3>Ball Pen</h3>
+                <p class="price">Rs. 50</p>
+                <button onclick="addToCart('Ball Pen',50)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product-card">
+                <h3>Cotton Buds</h3>
+                <p class="price">Rs. 750</p>
+                <button onclick="addToCart('Cotton Buds',750)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product-card">
+                <h3>Gillette Blade</h3>
+                <p class="price">Rs. 600</p>
+                <button onclick="addToCart('Gillette Blade',600)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product-card">
+                <h3>Cutter Knife</h3>
+                <p class="price">Rs. 400</p>
+                <button onclick="addToCart('Cutter Knife',400)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product-card">
+                <h3>Plastic Bottle</h3>
+                <p class="price">Rs. 460</p>
+                <button onclick="addToCart('Plastic Bottle',460)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product-card">
+                <h3>Permanent Marker</h3>
+                <p class="price">Rs. 209</p>
+                <button onclick="addToCart('Permanent Marker',209)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product-card">
+                <h3>Balloons</h3>
+                <p class="price">Rs. 480</p>
+                <button onclick="addToCart('Balloons',480)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product-card">
+                <h3>Matches</h3>
+                <p class="price">Rs. 538</p>
+                <button onclick="addToCart('Matches',538)">
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- CART -->
+    <section class="cart-section">
+
+        <h2>🛒 Shopping Cart</h2>
+
+        <div id="cartItems">
+            <p>Your cart is empty.</p>
+        </div>
+
+        <h3>
+            Total:
+            Rs. <span id="cartTotal">0</span>
+        </h3>
+
+        <button class="order-btn" onclick="sendWhatsApp()">
+            📱 Order on WhatsApp
+        </button>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <h3>MUNAF-MART</h3>
+        <p>Wholesale & Retail Store</p>
+        <p>Kalutara, Sri Lanka</p>
+        <p>© 2026 MUNAF-MART</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
